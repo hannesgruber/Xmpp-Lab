@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TextView 
+        android:id="@+id/opponent"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            style="@style/game_row" >
+
+            <Button android:id="@+id/A0" style="@style/game_tile" />
+            
+            <Button android:id="@+id/A1" style="@style/game_tile" />
+            
+            <Button android:id="@+id/A2" style="@style/game_tile" />
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            style="@style/game_row" >
+            
+            <Button android:id="@+id/B0" style="@style/game_tile" />
+            
+            <Button android:id="@+id/B1" style="@style/game_tile" />
+            
+            <Button android:id="@+id/B2" style="@style/game_tile" />
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            style="@style/game_row" >
+            
+            <Button android:id="@+id/C0" style="@style/game_tile" />
+            
+            <Button android:id="@+id/C1" style="@style/game_tile" />
+            
+            <Button android:id="@+id/C2" style="@style/game_tile" />
+            
+        </TableRow>
+        
+    </TableLayout>
+
+</RelativeLayout>
