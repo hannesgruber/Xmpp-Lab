@@ -38,7 +38,7 @@ public class Game {
 	
 	public void doMove(int x, int y){
 
-		if(gamePlan[y][x].isEmpty()){
+		if(gamePlan[y][x].equals("")){
 			
 			String marker = myTurn ? myMarker : opponentMarker;
 			gamePlan[y][x] = marker;
@@ -105,7 +105,7 @@ public class Game {
 		boolean tie = true;
 		for (int x = 0; x < 3; x++) {
 			for (int y = 0; y < 3; y++) {
-				if(gamePlan[y][x].isEmpty()){
+				if(gamePlan[y][x].equals("")){
 					tie = false;
 				}
 			}

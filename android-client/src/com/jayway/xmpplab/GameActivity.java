@@ -97,7 +97,7 @@ public class GameActivity extends Activity implements GameListener{
 				break;
 			}
 			
-			if(game.getMarker(x, y).isEmpty()){
+			if(game.getMarker(x, y).equals("")){
 				game.doMove(x, y);
 				
 				// TODO: Implement sending move
